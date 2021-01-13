@@ -1,0 +1,17 @@
+# conn = sqlite3.connect('halfbrick.db')
+# c = conn.cursor()
+# df.to_sql('sandboxtbl', conn, if_exists='replace', index = False)
+# c.execute('''
+# SELECT * FROM sandboxtbl
+#           ''')
+# sql=""
+# i=0
+# for row in c.fetchall():
+#     print(i)
+#     i=i+1
+#     sql=sql+"INSERT INTO sandboxtbl Values ("
+#     for val in row:
+#         sql=sql+'"'+str(val)+'"'+","
+#     sql = sql[:-1]+")\n"
+# print(sql)
+# c.execute('DROP TABLE sandboxtbl')
